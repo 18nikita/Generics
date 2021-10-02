@@ -18,12 +18,11 @@ public class Generics {
 	}
 
 	public static String getMax(String a, String b, String c) {
-		String max = a;
-		if (b.compareTo(a) > 0 && b.compareTo(c) > 0) {
+			String max = a;
+		if (b.length()>(a.length()) && b.length()>(c.length())) {
 			max = b;
-		} else if (c.compareTo(a) > 0)
+		} else if (c.length()>(a.length()))
 			max = c;
-
 		System.out.println("The maximum no. is: " + max);
 		return max;
 	}
