@@ -2,8 +2,6 @@ package com.bridgelabz.generics;
 
 import javax.swing.Box;
 
-
-public static void main(String args[]) {
 public class Generics<E extends Comparable> {
 	 public static <E extends Comparable> E testMaximum(E... values) {
 	        E max = values[0];
@@ -23,5 +21,3 @@ public class Generics<E extends Comparable> {
 	        System.out.print(" max is "+max);
 	    }
 	}
-    
-}
